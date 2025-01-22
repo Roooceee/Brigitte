@@ -754,6 +754,10 @@ footer .nav1 ul li a:hover {
     color: var(--colorred);
 }
 
+footer .nav1 p a:hover {
+    color: var(--colorred);
+}
+
 footer .nav2 ul {
     display: flex;
     gap: 20px;
