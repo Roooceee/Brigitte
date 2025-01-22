@@ -1,0 +1,1055 @@
+/* Début CSS Global */
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: var(--colorred);
+    font-size: 25px;
+}
+
+#mainaccueil h2 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+/* Fin CSS Global */
+
+
+/* Début des class */
+
+.contain-1900 {
+    max-width: 1900px;
+    margin: auto;
+}
+
+.contain-1440 {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.contain-950 {
+    max-width: 950px;
+}
+
+.contain-780 {
+    max-width: 780px;
+}
+
+.contain-650 {
+    max-width: 650px;
+}
+
+.contain-500 {
+    max-width: 500px;
+}
+
+.contain-450 {
+    max-width: 450px;
+}
+
+.contain-175 {
+    max-width: 175px;
+}
+
+.button1 {
+    background-color: var(--colorwhite);
+    border: 1px solid var(--colorpink);
+    color: var(--colorblack);
+    display: inline-block;
+    max-width: fit-content;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font2);
+}
+
+.button2 {
+    border: 1px solid var(--colorpink);
+    color: var(--colorwhite);
+    display: inline-block;
+    max-width: fit-content;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font2); 
+}
+
+.button3 {
+    background-color: var(--colorblue);
+    color: var(--colorwhite);
+    display: inline-block;
+    max-width: fit-content;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font2); 
+}
+
+.button4 {
+    background-color: var(--colorpink);
+    color: var(--colorwhite);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font2); 
+    border: none;
+}
+
+.radius3 {
+    border-radius: 3px;
+}
+
+.bordercolorgrey {
+    border: 1px solid var(--colorgrey4);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.backgroundpink {
+    background-color: var(--colorpink);
+}
+/* Fin des class */
+
+/* Début des variables */
+:root {
+    --colorblack : #000; 
+    --colorred : #cc3900;
+    --colorpink : #fbbbcd;
+    --colorwhite : #fff;
+    --colorgrey : #F7F7F7;
+    --colorgrey2: #9C9C9C;
+    --colorgrey3: #6A6A6A;
+    --colorgrey4: #818A91;
+    --colorgrey6:#7A7A7A;
+    --colorblue : #605BE5;
+    --font1 : "Gloria Hallelujah";
+    --font2 : "Noto Sans";
+}
+/* Fin des variables  */
+
+
+/* Début CSS Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 180px;
+}
+
+header .nav1 ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav1 ul li a {
+    color: var(--colorblack);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font2);
+}
+
+header .nav1 {
+    padding: 10px 40px;
+}
+
+header .nav1 ul li a:hover {
+    color: var(--colorred);
+}
+
+header .nav2 ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav2 {
+    padding: 10px 40px;
+}
+
+header .nav2 ul li i {
+    font-size: 24px;
+}
+
+.burger-icon {
+    display: none;
+}
+/* Fin cSS Header */
+
+/* Début CSS Section 1 Index */
+#mainaccueil #section1 {
+    background-image: url(../img/background-section1.png);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    max-height: 900px;
+    max-width: 1900px;
+    padding: 100px 0px;
+}
+
+#mainaccueil #section1 article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#mainaccueil #section1 article div div {
+    display: grid;
+    width: 150px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#mainaccueil #section1 article div hr {
+    margin-top: 10px;
+    max-width: 50px;
+    height: 0px;
+    font-weight: 400;
+    border-top: solid 2px var(--colorred);
+}
+
+#mainaccueil #section1 article h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorred);
+    font-family: var(--font2);
+}
+
+#mainaccueil #section1 article h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+#mainaccueil #section1 article h3 , #mainaccueil #section1 article h2 {
+    font-family: var(--font1);
+}
+
+#mainaccueil #section1 article p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+
+#mainaccueil #section1 article img {
+    max-width: 552px;
+}
+
+/* Fin CSS Section 1 Index */
+
+/* Début CSS Section 2 Index */
+
+#mainaccueil #section2 article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+#section2 > article > div.contain-950.backgroundpink {
+    height: 860px;
+    display: flex;
+}
+
+#section2 > article > div.contain-950.backgroundpink > div {
+    margin: auto;
+    padding: 10px;
+}
+
+#section2 > article > div > div > p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+
+#section2img {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto
+}
+
+#section2img > img:nth-child(1), #section2img > img:nth-child(2), #section2img > img:nth-child(3), #section2img > img:nth-child(4) {
+    max-width: 223px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#section2img > img:nth-child(5) {
+    grid-column: 1/3;
+}
+
+#section2img > img:nth-child(6) {
+    grid-column: 3/5;
+}
+
+#section2img > img:nth-child(5),#section2img > img:nth-child(6) {
+    max-width: 456px;
+    height: 390px;
+    object-fit: cover;
+}
+
+#section2img a {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font2);
+    text-decoration: underline 1px solid;
+    color: var(--colorblack);
+}
+
+/* Fin CSS Section 2 Index */
+
+/* Début CSS Section 3 Index*/
+
+#section3 {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+#section3 article div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+#section3 > article > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#section3 > article > div:nth-child(2)>div {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+#section3 > article > div:nth-child(2)>div img {
+    max-width: 332px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#section3 > article > div:nth-child(2)>div h3 {
+    font-size: 25px ;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+#section3 > article > div:nth-child(2)>div p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+
+/* Fin CSS Section 3 Index */
+
+/* Début CSS Section 4 Index*/
+
+#section4 {
+    padding: 100px 0px;
+    background-color: #F7F7F7;
+}
+
+#section4 article h2 {
+    text-align: center;
+    grid-column: 1/4;
+}
+
+#section4 article div h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+#section4 article div p {
+    padding-bottom: 30px;
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#section4 article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#section4 article div nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section4 article div nav ul {
+    gap: 20px;
+    display: flex;
+}
+
+#section4 article div img {
+    max-width: 450px ;
+    height: 300px;
+    object-fit: cover;
+}
+/* Fin CSS Section 4 Index*/
+
+/* Début CSS Section 5 Index*/
+
+#section5 {
+    padding: 100px 0px;
+}
+
+#section5 > article > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#section5 > article > div:nth-child(2) {
+    padding-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#section5>article>div:nth-child(2)>div {
+    display: grid;
+    gap: 10px;
+}
+
+#section5>article>div:nth-child(2)>div h3 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+#section5>article>div:nth-child(2)>div h4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+
+#section5>article>div:nth-child(2)>div p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+
+#section5>article>div:nth-child(2)>div i, #section5>article>div:nth-child(2)>div a {
+    font-size: 16px;
+    color: var(--colorblack);
+    font-weight: 600;
+}
+
+#section5>article>div:nth-child(2)>div>img {
+    max-width: 460px;
+    max-height: 460px;
+    object-fit: cover;
+}
+
+/* Fin CSS Section 5 Index*/
+
+/* Début CSS Section 6 Index*/
+
+#section6 {
+    display: flex;
+    height: 533px;
+    background-color: var(--colorred);
+}
+
+#section6 article {
+    text-align: center;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    color: var(--colorwhite);
+}
+
+#section6 article a {
+    margin: auto;
+}
+
+#section6 article p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: var(--font2);
+    color: var(--colorwhite);
+}
+/* Fin CSS Section 6 Index */
+
+/* Début CSS Actualités */
+
+#mainactualite h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+#section1head {
+    display: flex;
+    height: 400px;
+}
+
+#section1actu > article > div.contain-1440 {
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#section1actu > article > div.contain-1440 h2 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#section1actu > article > div.contain-1440 .button3 {
+    grid-column: 1/4;
+    max-width: 135px;
+    margin: auto;
+}
+
+
+#section1actu > article > div.contain-1440 > div > img {
+    max-width: 463px;
+}
+
+#section1actu > article > div.contain-1440 > div > h3 {
+    color: var(--colorblack);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+
+#section1actu > article > div.contain-1440 > div > h4 {
+    color: var(--colorgrey2);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+
+#section1actu > article > div.contain-1440 > div > p {
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colorgrey3);
+}
+
+#section1actu > article > div.contain-1440 > div > a {
+    color: var(--colorblue);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font2);
+}
+/* Fin CSS Actualités */
+
+/* Début CSS oeuvre */
+#sectionoeuvre>article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0px 10px;
+}
+
+#sectionoeuvre > article > h1 {
+    grid-column: 1/5;
+}
+
+#sectionoeuvre>article>div {
+    height: 420px;
+    display: grid;
+}
+
+#sectionoeuvre>article>div > img {
+    max-width: fit-content;
+    max-height: 300px;
+}
+
+#sectionoeuvre>article>div>div {
+    display: grid;
+    align-items: end;
+}
+/* Fin CSS oeuvre */
+
+/* Début CSS Contact */
+#sectioncontact {
+    background-image: url(../img/background-section1.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 100px;
+    padding: 10px;
+}
+
+#sectioncontact h1 {
+    font-size: 45px;
+    font-family: var(--font1);
+    font-weight: 400;
+    color: var(--colorblack);
+}
+
+#sectioncontact p, #sectioncontact label {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font2);
+    color: var(--colorblack);
+}
+
+#sectioncontact p {
+    padding-bottom: 35px;
+}
+
+#sectioncontact>article>address>ul>li {
+    display: flex;
+    align-items: baseline;
+    gap: 20px
+}
+
+#sectioncontact > article > address > ul > li:nth-child(2) > a , #sectioncontact > article > address > ul > li:nth-child(3) > a {
+    max-width: 180px;
+}
+
+#sectioncontact>article>address>ul>li i {
+    font-size: 16px;
+}
+
+#sectioncontact>article>address>ul>li>a {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font1);
+    color: var(--colorblack);
+}
+
+#sectioncontact article, #sectioncontact form {
+    display: grid;
+}
+
+#sectioncontact article {
+    max-width: 550px;
+    max-height: 446px;
+}
+
+#sectioncontact form {
+    gap: 10px;
+    max-width: 411px;
+}
+
+#sectioncontact form input {
+    height: 40px;
+}
+
+#sectioncontact form textarea {
+    height: 180px;
+    resize: none;
+}
+
+#sectioncontact form input::placeholder, #sectioncontact form textarea::placeholder {
+    color: var(--colorgrey6);
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 60%;
+    padding: 10px 10px;
+}
+/* Fin CSS Contact */
+
+/* Début CSS Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .nav1 ul {
+    display: flex;
+    gap: 20px;
+}
+
+footer .nav1 ul li a {
+    color: var(--colorblack);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font2);
+}
+
+footer .nav1 a, footer .nav1 p {
+    color: var(--colorblack);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font2);   
+    text-align: center;
+}
+
+footer .nav1 {
+    padding: 10px 40px;
+}
+
+footer .nav1 ul li a:hover {
+    color: var(--colorred);
+}
+
+footer .nav2 ul {
+    display: flex;
+    gap: 20px;
+}
+
+footer .nav2 {
+    padding: 10px 40px;
+}
+
+footer .nav2 ul li i {
+    font-size: 24px;
+}
+
+/* Début du CSS à 1396px car le site commencé a ne plus bien s'afficher */
+@media only screen and (max-width:1500px) {
+
+        header .nav1 {
+            padding: 10px 10px;
+        }
+
+        footer .nav1 {
+            padding: 10px 10px;
+        }
+
+        #section4 {
+            padding: 50px 20px;
+        }
+
+        #section5>article>div:nth-child(2)>div>img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+    }
+
+/* Début du CSS Tablette */
+    @media only screen and (max-width:1024px) {
+
+        .logo {
+            max-width: 140px;
+        }
+
+        header .nav2 ul li i {
+            font-size: 18px;
+        }
+
+        header .nav1 {
+            display: none;
+        }
+
+        .burger-icon {
+            display: block;
+        }
+
+        .burger-icon span {
+            display: block;
+            background-color: #1E1D31;
+            width: 35px;
+            height: 5px;
+            margin: 6px 0;
+        }
+
+        /* CSS Index */
+        #section1 {
+            max-height: 600px;
+        }
+        
+        #mainaccueil #section2 article {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #mainaccueil #section1 article img {
+            max-width: 40%;
+        }
+    
+        #mainaccueil #section2 article div {
+            width: 100%;
+            margin: auto;
+            height: 100%;
+            padding: 10px 0px;
+
+        }
+
+        #section2img > img:nth-child(1), #section2img > img:nth-child(2), #section2img > img:nth-child(3), #section2img > img:nth-child(4) {
+            max-width: 100%;
+        }
+
+        #section2img > img:nth-child(5), #section2img > img:nth-child(6) {
+            width: 100%;
+        }
+    
+        #section3 > article > div:nth-child(2) img {
+            max-width: 100%;
+            max-height: 80%;
+            margin: auto;
+        }
+
+        #section4 article div img {
+            max-width: 100%;
+            max-height: 80%;
+        } 
+
+        #section5 {
+            padding: 50px 20px;          
+        }
+        
+        #section5>article>div:nth-child(2)>div {
+            padding: 0px 20px;
+        }
+        /* CSS Index */
+
+
+        /* CSS Actu */
+
+        #section1actu > article > div.contain-1440 > div > img {
+            max-width: 100%;
+        }
+
+        /* CSS Actu */
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        footer .nav1 {
+            grid-row: 3/3;
+            grid-column: 1/3;
+        }
+
+        footer .nav1 ul {
+            display: grid;
+            gap: 20px;
+            text-align: center;
+        }
+
+        footer > nav.nav1 > p {
+            padding: 20px 0px;
+        } 
+
+        footer .nav2 ul {
+            display: flex;
+            justify-content: right;
+        }
+    }
+
+/* Début du CSS Téléphone */
+    @media only screen and (max-width:767px) {
+
+        .logo {
+            max-width: 80px;
+        }
+
+        /* CSS Index */
+        #mainaccueil #section1 article h1 {
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        #mainaccueil #section1 article h3 {
+            font-size: 14px;
+        }
+
+        #mainaccueil #section1 article {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        #mainaccueil #section1 article div div {
+            margin: auto;
+        }
+
+        #section1 > article > div {
+            margin: auto;
+        }
+
+        #section1 > article > img {
+            margin: auto;
+        }
+
+        #section2img {
+            display: grid;  
+            grid-template-columns: 1fr;
+        }
+
+        #section2img img {
+            width: 90%;
+            height: 40%;
+            margin: auto;
+        }
+
+        #section2img > img:nth-child(5), #section2img > img:nth-child(6) {
+            width: 90%;
+            height: 100%;
+            grid-column: 1/1;
+        }
+
+        #section2img > a {
+            text-align: center;
+        }
+
+        #section3 article div {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #section3 > article > div:nth-child(1) > h2 {
+            text-align: center;
+        }
+
+        #section3 > article > div:nth-child(1) > a {
+            margin: auto;
+        }
+
+        #section3 > article > div:nth-child(2) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #section4 article {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #section4 article>div {
+            margin: auto;
+        }
+
+        #section4 article h2 {
+            grid-column: 1/1;
+        }
+
+        #section5 > article > div:nth-child(1) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #section5 > article > div:nth-child(1) a {
+            margin: auto;
+        }
+
+        #section5 > article > div:nth-child(1) > h2 {
+            text-align: center;
+        }
+
+        #section5 > article > div:nth-child(2) {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        #section5>article>div:nth-child(2)>div>img {
+            margin: auto;
+        }
+
+        #section5 > article > div:nth-child(2)>div {
+            text-align: center;
+        }
+        /* CSS Index */
+
+        /* CSS Actu */
+        #section1actu > article > div.contain-1440 {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #section1actu > article > div.contain-1440 h2 , #section1actu > article > div.contain-1440 .button3 {
+            grid-column: 1/1;
+        }
+        /* CSS Actu */
+
+        /* CSS Oeuvre */
+        #sectionoeuvre>article {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        #sectionoeuvre > article > h1 {
+            grid-column: 1/1;
+        }
+
+        #sectionoeuvre>article>div {
+            height: 100%;
+            margin: auto;
+        }
+
+        #sectionoeuvre>article>div>div {
+            grid-row: 1/3;
+        }
+
+        #sectionoeuvre>article>div > img {
+            margin: auto;
+            max-width: 50%;
+            max-height: 100%;
+        }
+        /* CSS Oeuvre */
+
+        /* CSS Contact */
+
+        #sectioncontact {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #sectioncontact article, #sectioncontact form {
+            margin: auto;
+            width: 100%;
+        }
+
+        /* CSS Contact */
+
+    }
+
+
+
+
+
+/* Fin CSS Footer */
