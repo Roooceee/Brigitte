@@ -381,7 +381,7 @@ header .nav2 ul li i {
 /* Début CSS Section 4 Index*/
 
 #section4 {
-    padding: 100px 0px;
+    padding: 100px 10px;
     background-color: #F7F7F7;
 }
 
@@ -778,14 +778,6 @@ footer .nav2 ul li i {
             padding: 10px 10px;
         }
 
-        footer .nav1 {
-            padding: 10px 10px;
-        }
-
-        #section4 {
-            padding: 50px 20px;
-        }
-
         #section5>article>div:nth-child(2)>div>img {
             max-width: 100%;
             max-height: 100%;
@@ -840,6 +832,10 @@ footer .nav2 ul li i {
             height: 100%;
             padding: 10px 0px;
 
+        }
+
+        #section2 > article > div.contain-950.backgroundpink > div h2 {
+            text-align: center;
         }
 
         #section2img > img:nth-child(1), #section2img > img:nth-child(2), #section2img > img:nth-child(3), #section2img > img:nth-child(4) {
@@ -926,7 +922,7 @@ footer .nav2 ul li i {
         }
 
         p {
-            font-size: 12px;
+            padding: 0px 10px;
         }
 
         #mainaccueil #section1 article h3 {
@@ -976,6 +972,7 @@ footer .nav2 ul li i {
         #section3 article div {
             display: grid;
             grid-template-columns: 1fr;
+            gap: 20px;
         }
 
         #section3 > article > div:nth-child(1) > h2 {
@@ -1007,10 +1004,12 @@ footer .nav2 ul li i {
         #section5 > article > div:nth-child(1) {
             display: grid;
             grid-template-columns: 1fr;
+            gap: 20px;
         }
 
         #section5 > article > div:nth-child(1) a {
             margin: auto;
+            text-align: center;
         }
 
         #section5 > article > div:nth-child(1) > h2 {
@@ -1030,6 +1029,12 @@ footer .nav2 ul li i {
         #section5 > article > div:nth-child(2)>div {
             text-align: center;
         }
+
+        #section6 {
+            height: 100%;
+            padding: 20px 10px;
+        }
+
         /* CSS Index */
 
         /* CSS Actu */
