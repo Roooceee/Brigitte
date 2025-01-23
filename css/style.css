@@ -7,66 +7,52 @@
     margin: 0;
     scroll-behavior: smooth;
 }
-
 img {
     width: 100%;
+    object-fit: cover;
 }
-
 ul {
     padding: 0;
 }
-
 li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 i {
     color: var(--colorred);
     font-size: 25px;
 }
 /* Fin CSS Global */
 
-
 /* Début des class */
-
 .contain-1900 {
     max-width: 1900px;
     margin: auto;
 }
-
 .contain-1440 {
     max-width: 1440px;
     margin: auto;
 }
-
 .contain-950 {
     max-width: 950px;
 }
-
 .contain-780 {
     max-width: 780px;
 }
-
 .contain-650 {
     max-width: 650px;
 }
-
 .contain-500 {
     max-width: 500px;
 }
-
 .contain-450 {
     max-width: 450px;
 }
-
 .contain-175 {
     max-width: 175px;
 }
-
 .button1 {
     background-color: var(--colorwhite);
     border: 1px solid var(--colorpink);
@@ -78,12 +64,10 @@ i {
     font-weight: 500;
     font-family: var(--font2);
 }
-
 .button1:hover {
     background-color: var(--colorred);
     color: var(--colorwhite);
 } 
-
 .button2 {
     border: 1px solid var(--colorpink);
     color: var(--colorwhite);
@@ -94,7 +78,6 @@ i {
     font-weight: 500;
     font-family: var(--font2); 
 }
-
 .button3 {
     background-color: var(--colorblue);
     color: var(--colorwhite);
@@ -105,7 +88,6 @@ i {
     font-weight: 500;
     font-family: var(--font2); 
 }
-
 .button4 {
     background-color: var(--colorpink);
     color: var(--colorwhite);
@@ -115,19 +97,15 @@ i {
     font-family: var(--font2); 
     border: none;
 }
-
 .radius3 {
     border-radius: 3px;
 }
-
 .bordercolorgrey {
     border: 1px solid var(--colorgrey4);
 }
-
 .uppercase {
     text-transform: uppercase;
 }
-
 .backgroundpink {
     background-color: var(--colorpink);
 }
@@ -150,7 +128,6 @@ i {
 }
 /* Fin des variables  */
 
-
 /* Début CSS Header */
 header {
     display: flex;
@@ -158,44 +135,32 @@ header {
     align-items: center;
     padding: 10px;
 }
-
 .logo {
     max-width: 180px;
 }
-
 header .nav1 ul {
     display: flex;
     gap: 20px;
 }
-
 header .nav1 ul li a {
     color: var(--colorblack);
     font-size: 16px;
     font-weight: 600;
     font-family: var(--font2);
 }
-
-header .nav1 {
-    padding: 10px 40px;
-}
-
 header .nav1 ul li a:hover {
     color: var(--colorred);
 }
-
 header .nav2 ul {
     display: flex;
     gap: 20px;
 }
-
 header .nav2 {
     padding: 10px 40px;
 }
-
 header .nav2 ul li i {
     font-size: 24px;
 }
-
 .burger-icon {
     display: none;
 }
@@ -208,57 +173,44 @@ header .nav2 ul li i {
     background-size: 50%;
     background-position-y: 60%;
     background-position-x: 100%;
-    max-height: 900px;
-    max-width: 1900px;
     padding: 100px 0px;
 }
-
 #mainaccueil #section1 article{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
 }
-
 #mainaccueil #section1 article div div {
-    display: grid;
-    width: 150px;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     align-items: baseline;
-    gap: 20px;
+    gap: 12px;
 }
-
 #mainaccueil #section1 article div hr {
-    margin-top: 10px;
-    max-width: 50px;
-    height: 0px;
-    font-weight: 400;
+    width: 50px;
+    height: 1px;
     border-top: solid 2px var(--colorred);
 }
-
 #mainaccueil #section1 article .welcome {
     font-size: 16px;
     font-weight: 500;
     color: var(--colorred);
     font-family: var(--font2);
 }
-
 h1 , #mainaccueil h2 {
     font-size: 45px;
     font-weight: 400;
     font-family: var(--font1);
     line-height: 45px;
-    padding-top: 40px;
     font-family: var(--font1);
 }
-
 #mainaccueil #section1 .h2section1 {
     padding-top: 16px;
     padding-bottom: 20px;
     font-size: 28px;
     font-weight: 400;
 }
-
 #mainaccueil #section1 article p {
     padding-top: 10px;
     padding-bottom: 40px;
@@ -266,71 +218,49 @@ h1 , #mainaccueil h2 {
     font-weight: 400;
     font-family: var(--font2);
 }
-
 #mainaccueil #section1 article img {
     max-width: 552px;
 }
-
 /* Fin CSS Section 1 Index */
 
 /* Début CSS Section 2 Index */
-
 #mainaccueil #section2 article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     align-items: center;
 }
-
 #section2 > article > div.contain-950.backgroundpink {
     height: 860px;
     display: flex;
 }
-
 #section2 > article > div.contain-950.backgroundpink > div {
     margin: auto;
     padding: 10px;
-    display: grid;
-    gap: 10px;
 }
-
 #section2 > article > div.contain-950.backgroundpink > div h2 {
     padding-bottom: 70px;
 }
-
 #section2 > article > div > div > p {
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
     font-family: var(--font2);
 }
-
 #section2img {
     display: grid;
     gap: 10px;
-    grid-template-columns: auto auto auto auto
+    grid-template-columns: repeat(4,1fr)
 }
-
-#section2img > img:nth-child(1), #section2img > img:nth-child(2), #section2img > img:nth-child(3), #section2img > img:nth-child(4) {
-    max-width: 223px;
+#section2img > img{
     height: 400px;
-    object-fit: cover;
 }
-
 #section2img > img:nth-child(5) {
     grid-column: 1/3;
 }
-
 #section2img > img:nth-child(6) {
     grid-column: 3/5;
 }
-
-#section2img > img:nth-child(5),#section2img > img:nth-child(6) {
-    max-width: 456px;
-    height: 390px;
-    object-fit: cover;
-}
-
 #section2img a {
     font-size: 16px;
     font-weight: 400;
@@ -338,171 +268,140 @@ h1 , #mainaccueil h2 {
     text-decoration: underline 1px solid;
     color: var(--colorblack);
 }
-
 /* Fin CSS Section 2 Index */
 
 /* Début CSS Section 3 Index*/
-
 #section3 {
     padding-bottom: 100px;
     padding-top: 100px;
 }
-
-#section3 div>article {
+#section3>div>:nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
-
-
-#section3 > div > div {
+#section3 > div > div:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
-
-#section3 > div > div>article {
+#section3 > div > div:nth-child(2)>article {
     display: grid;
     gap: 10px;
     text-align: center;
 }
-
-#section3 > div > div>article img {
+#section3 > div > div:nth-child(2)>article img {
     max-width: 332px;
     height: 300px;
-    object-fit: cover;
 }
-
-#section3 > div > div>article h3 {
+#section3 > div > div:nth-child(2)>article h3 {
     font-size: 25px ;
     font-weight: 400;
     font-family: var(--font1);
 }
-
-#section3 > div > div>article p {
+#section3 > div > div:nth-child(2)>article p {
     font-size: 16px;
     font-weight: 400;
     font-family: var(--font2);
 }
-
 /* Fin CSS Section 3 Index */
 
 /* Début CSS Section 4 Index*/
-
 #section4 {
     padding: 100px 10px;
     background-color: #F7F7F7;
 }
-
 #section4>div h2 {
     text-align: center;
-    grid-column: 1/4;
+    margin-bottom: 70px;
 }
-
-#section4>div>article h3 {
+#section4>div>div>article h3 {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     font-family: var(--font1);
 }
-
-#section4>div>article p {
+#section4>div>div>article p {
     padding-bottom: 30px;
     font-family: var(--font2);
     font-size: 14px;
     font-weight: 400;
 }
-
-#section4>div {
+#section4>div>div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
-
-#section4>div>article nav {
+#section4>div>div>article div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-#section4>div>article nav ul {
+#section4>div>div>article div ul {
     gap: 20px;
     display: flex;
 }
-
-#section4>div>article img {
+#section4>div>div>article img {
     max-width: 450px ;
     height: 300px;
-    object-fit: cover;
 }
 /* Fin CSS Section 4 Index*/
 
 /* Début CSS Section 5 Index*/
-
 #section5 {
     padding: 100px 0px;
 }
-
-#section5 > div > article {
+#section5 > div > div:nth-child(1) {
     display: flex;
     justify-content: space-between;    
     align-items: center;
     padding: 0px 20px;
 }
-
-#section5 > div > div {
+#section5 > div > div:nth-child(2) {
     padding-top: 50px;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-#section5>div>div>article {
+#section5>div>div:nth-child(2)>article {
     display: grid;
     gap: 10px;
+    padding: 0 20px;
 }
-
-#section5>div>div>article h3 {
+#section5>div>:nth-child(2)>article h3 {
     font-size: 18px;
     font-weight: 400;
     font-family: var(--font1);
 }
-
-#section5>div>div>article .date {
+#section5>div>div:nth-child(2)>article .date {
     font-size: 14px;
     font-weight: 400;
     font-family: var(--font2);
     color: var(--colorgrey2);
 }
-
-#section5>div>div>article p {
+#section5>div>div:nth-child(2)>article p {
     font-size: 16px;
     font-weight: 400;
     font-family: var(--font2);
 }
-
-#section5>div>div>article i, #section5>div>div>article a {
+#section5>div>div:nth-child(2)>article i, #section5>div>div>article a {
     font-size: 16px;
     color: var(--colorblack);
     font-weight: 600;
 }
-
-#section5>div>div>article>img {
+#section5>div>div:nth-child(2)>article>img {
     max-width: 460px;
     max-height: 460px;
-    object-fit: cover;
 }
-
 /* Fin CSS Section 5 Index*/
 
 /* Début CSS Section 6 Index*/
-
 #section6 {
     display: flex;
     height: 533px;
     background-color: var(--colorred);
 }
-
 #section6 article {
     text-align: center;
     margin: auto;
@@ -510,11 +409,9 @@ h1 , #mainaccueil h2 {
     gap: 20px;
     color: var(--colorwhite);
 }
-
 #section6 article a {
     margin: auto;
 }
-
 #section6 article p {
     font-size: 18px;
     font-weight: 400;
@@ -525,26 +422,22 @@ h1 , #mainaccueil h2 {
 /* Fin CSS Section 6 Index */
 
 /* Début CSS Actualités */
-
 #mainactualite h1 {
     font-size: 45px;
     text-align: center;
     font-weight: 400;
     font-family: var(--font1);
 }
-
 #section1head {
     display: flex;
     height: 400px;
 }
-
 #section1actu > div.contain-1440 {
     padding: 20px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-
 #section1actu > div.contain-1440 h2 {
     grid-column: 1/4;
     text-align: center;
@@ -552,39 +445,32 @@ h1 , #mainaccueil h2 {
     font-weight: 400;
     color: var(--colorgrey6);
 }
-
 #section1actu > div.contain-1440 .button3 {
     grid-column: 1/4;
     max-width: 135px;
     margin: auto;
 }
-
-
 #section1actu > div.contain-1440 > article > img {
     max-width: 463px;
 }
-
 #section1actu > div.contain-1440 > article > h3 {
     color: var(--colorblack);
     font-size: 16px;
     font-weight: 400;
     font-family: var(--font2);
 }
-
 #section1actu > div.contain-1440 > article > .date {
     color: var(--colorgrey2);
     font-size: 14px;
     font-weight: 400;
     font-family: var(--font2);
 }
-
 #section1actu > div.contain-1440 > article > p {
     font-family: var(--font2);
     font-weight: 400;
     font-size: 14px;
     color: var(--colorgrey3);
 }
-
 #section1actu > div.contain-1440 > article > a {
     color: var(--colorblue);
     font-size: 14px;
@@ -600,25 +486,20 @@ h1 , #mainaccueil h2 {
     gap: 70px;
     padding: 0px 10px;
 }
-
 #sectionoeuvre > div > h1 {
     grid-column: 1/5;
     font-size: 45px;
     font-weight: 400;
     font-family: var(--font1);
 }
-
 #sectionoeuvre>div>article {
     display: grid;
     gap: 20px;
 }
-
 #sectionoeuvre>div>article > img {
     height: 300px;
     max-width: 100%;
-    object-fit: cover;
 }
-
 #sectionoeuvre>div>article h2 {
     color: var(--colorblack);
     font-size: 25px;
@@ -627,7 +508,6 @@ h1 , #mainaccueil h2 {
     text-align: center;
     font-family: var(--font1);
 }
-
 #sectionoeuvre>div>article p {
     font-family: var(--font2);
     font-size: 16px;
@@ -635,7 +515,6 @@ h1 , #mainaccueil h2 {
     line-height: 24px;
     text-align: center;
 }
-
 /* Fin CSS oeuvre */
 
 /* Début CSS Contact */
@@ -651,69 +530,56 @@ h1 , #mainaccueil h2 {
     gap: 100px;
     padding: 10px;
 }
-
 #sectioncontact h1 {
     font-size: 45px;
     font-family: var(--font1);
     font-weight: 400;
     color: var(--colorblack);
 }
-
 #sectioncontact>article>p, #sectioncontact label {
     font-size: 16px;
     font-weight: 400;
     font-family: var(--font2);
     color: var(--colorblack);
 }
-
 #sectioncontact>article>p {
     padding-bottom: 35px;
 }
-
 #sectioncontact>article>address>ul>li {
     display: flex;
     align-items: baseline;
     gap: 20px
 }
-
 #sectioncontact > article > address > ul > li:nth-child(2) > a , #sectioncontact > article > address > ul > li:nth-child(3) > a {
     max-width: 180px;
 }
-
 #sectioncontact>article>address>ul>li i {
     font-size: 16px;
 }
-
 #sectioncontact>article>address>ul>li a , #sectioncontact>article>address>ul>li>p {
     font-size: 20px;
     font-weight: 400;
     font-family: var(--font1);
     color: var(--colorblack);
 }
-
 #sectioncontact article, #sectioncontact form {
     display: grid;
 }
-
 #sectioncontact article {
     max-width: 550px;
     max-height: 446px;
 }
-
 #sectioncontact form {
     gap: 10px;
     max-width: 411px;
 }
-
 #sectioncontact form input {
     height: 40px;
 }
-
 #sectioncontact form textarea {
     height: 180px;
     resize: none;
 }
-
 #sectioncontact form input::placeholder, #sectioncontact form textarea::placeholder {
     color: var(--colorgrey6);
     font-family: var(--font2);
@@ -731,19 +597,16 @@ footer {
     align-items: center;
     padding: 10px;
 }
-
 footer .nav1 ul {
     display: flex;
     gap: 20px;
 }
-
 footer .nav1 ul li a {
     color: var(--colorblack);
     font-size: 16px;
     font-weight: 600;
     font-family: var(--font2);
 }
-
 footer .nav1 a, footer .nav1 p {
     color: var(--colorblack);
     font-size: 16px;
@@ -751,69 +614,40 @@ footer .nav1 a, footer .nav1 p {
     font-family: var(--font2);   
     text-align: center;
 }
-
 footer .nav1 p {
     margin-top: 30px;
 }
-
-footer .nav1 {
-    padding: 10px 40px;
-}
-
 footer .nav1 ul li a:hover {
     color: var(--colorred);
 }
-
 footer .nav1 p a:hover {
     color: var(--colorred);
 }
-
 footer .nav2 ul {
     display: flex;
     gap: 20px;
 }
-
 footer .nav2 {
     padding: 10px 40px;
 }
-
 footer .nav2 ul li i {
     font-size: 24px;
 }
-
-/* Début du CSS à 1396px car le site commencé a ne plus bien s'afficher */
-@media only screen and (max-width:1500px) {
-
-        header .nav1 {
-            padding: 10px 10px;
-        }
-
-        #section5>div>div>article>img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-        
-    }
-
 /* Début du CSS Tablette */
     @media only screen and (max-width:1024px) {
 
         .logo {
             max-width: 140px;
         }
-
         header .nav2 ul li i {
             font-size: 18px;
         }
-
         header .nav1 {
             display: none;
         }
-
         .burger-icon {
             display: block;
         }
-
         .burger-icon span {
             display: block;
             background-color: #1E1D31;
@@ -824,55 +658,25 @@ footer .nav2 ul li i {
 
         /* CSS Index */
         #section1 {
-            max-height: 600px;
+            max-height: 100%;
         }
-        
         #mainaccueil #section2 article {
             display: grid;
             grid-template-columns: 1fr;
         }
 
-        #mainaccueil #section1 article img {
-            max-width: 40%;
-        }
-    
-        #mainaccueil #section2 article div {
-            width: 100%;
-            margin: auto;
+        #section2 > article > div {
             height: 100%;
-            padding: 10px 0px;
-
         }
 
-        #section2 > article > div.contain-950.backgroundpink > div h2 {
+        #section2 > article > div > div h2 {
             text-align: center;
-        }
-
-        #section2img > img:nth-child(1), #section2img > img:nth-child(2), #section2img > img:nth-child(3), #section2img > img:nth-child(4) {
-            max-width: 100%;
-        }
-
-        #section2img > img:nth-child(5), #section2img > img:nth-child(6) {
-            width: 100%;
-        }
-    
-        #section3 > div > div > article img {
-            max-width: 100%;
-            max-height: 80%;
+        }    
+        #section3 > div > div:nth-child(2) > article img {
             margin: auto;
         }
-
-        #section4>div>article img {
-            max-width: 100%;
-            max-height: 80%;
-        } 
-
         #section5 {
             padding: 50px 20px;          
-        }
-        
-        #section5>div>div>article {
-            padding: 0px 20px;
         }
         /* CSS Index */
 
@@ -893,14 +697,8 @@ footer .nav2 ul li i {
         footer .nav1 {
             grid-row: 3/3;
             grid-column: 1/3;
+            margin: auto;
         }
-
-        footer .nav1 ul {
-            display: grid;
-            gap: 20px;
-            text-align: center;
-        }
-
         footer > nav.nav1 > p {
             padding: 20px 0px;
         } 
@@ -917,28 +715,13 @@ footer .nav2 ul li i {
         .logo {
             max-width: 80px;
         }
+        footer .nav1 ul {
+            display: grid;
+            gap: 20px;
+            text-align: center;
+        }
 
         /* CSS Index */
-        #mainaccueil #section1 article h1 {
-            font-size: 12px;
-        }
-
-        h2 {
-            font-size: 24px;
-        }
-
-        h3 {
-            font-size: 20px;
-        }
-
-        p {
-            padding: 0px 10px;
-        }
-
-        #mainaccueil #section1 article h3 {
-            font-size: 14px;
-        }
-
         #mainaccueil #section1 article {
             display: grid;
             gap: 20px;
@@ -971,85 +754,65 @@ footer .nav2 ul li i {
             display: grid;  
             grid-template-columns: 1fr;
         }
-
-        #section2img img {
-            width: 90%;
-            height: 40%;
-            margin: auto;
-        }
-
         #section2img > img:nth-child(5), #section2img > img:nth-child(6) {
-            width: 90%;
-            height: 100%;
             grid-column: 1/1;
         }
-
         #section2img > a {
             text-align: center;
         }
-
-        #section3 div>div {
+        #section3 div> div:nth-child(1) {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        #section3 > div > div:nth-child(1) > h2 {
+            text-align: center;
+        }
+        #section3 > div > div:nth-child(1) > a {
+            margin: auto;
+        }
+        #section3 > div > div:nth-child(2) {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
         }
 
-        #section3 > div > article > h2 {
-            text-align: center;
+        #section4>div>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: 1fr;
         }
 
-        #section3 > div > article > a {
+        #section4>div>div:nth-child(2)>article {
             margin: auto;
         }
-
-        #section3 > div > article {
+        #section5 > div > div:nth-child(2) {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
         }
 
-        #section4>div {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-
-        #section4>div>article {
+        #section5 > div > div > a {
             margin: auto;
+            text-align: center;
         }
 
-        #section4>div h2 {
-            grid-column: 1/1;
+        #section5 > div > div > h2, #section5 > div > div > h3 {
+            text-align: center;
         }
 
-        #section5 > div > article {
+        #section5 > div > div:nth-child(1) {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
         }
 
-        #section5 > div > article a {
-            margin: auto;
+        #section5>div>div:nth-child(2)>article {
             text-align: center;
         }
 
-        #section5 > div > article h2 {
-            text-align: center;
-        }
-
-        #section5 > div > div {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        #section5>div>div>article>img {
+        #section5>div>div:nth-child(2)>article>img {
             margin: auto;
         }
-
-        #section5>div>div>article>img {
-            text-align: center;
-        }
-
         #section6 {
             height: 100%;
             padding: 20px 10px;
